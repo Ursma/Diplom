@@ -5,8 +5,6 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
-public class AuthRequest {
+public class CameraRequest {
     private Integer cameraId;
-    private String username;
-    private String password;
 }
