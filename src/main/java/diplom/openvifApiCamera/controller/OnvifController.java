@@ -22,7 +22,7 @@ public class OnvifController {
     public DeviceInfoResponse getInfo(@RequestBody AuthRequest request) {
         return onvifService.getDeviceInfoResponse(request);
     }
-    //test commit
+
 
 //    @PostMapping("/snapshot")
 //    public String takeSnapshot(@RequestBody CameraRequest request) {
