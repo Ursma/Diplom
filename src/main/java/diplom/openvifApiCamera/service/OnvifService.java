@@ -254,4 +254,27 @@ public class OnvifService {
         System.out.println(">>> resolved snapshotPath: " + snapshotPath);
         return new File(snapshotPath);
     }
+
+    private static File getSnapshotPathAndCreateFileV2(CameraRequest cameraRequest) {
+        int id = cameraRequest.getCameraId();
+        System.out.println(">>> cameraId: " + id);
+
+        String snapshotPath;
+        switch (id) {
+            case 1:
+                snapshotPath = "C:/Diplom/snapshots/camera1/latest.jpg";
+                break;
+            case 2:
+                snapshotPath = "C:/Diplom/snapshots/camera2/latest.jpg";
+                break;
+            case 3:
+                snapshotPath = "C:/Diplom/snapshots/camera3/latest.jpg";
+                break;
+            default:
+                snapshotPath = "C:/Diplom/snapshots/camera1/latest.jpg";
+        }
+
+        System.out.println(">>> resolved snapshotPath: " + snapshotPath);
+        return new File(snapshotPath);
+    }
 }
